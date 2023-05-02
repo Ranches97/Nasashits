@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Astronomy Picture of the Day</title>
+  <link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
+  <script src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
+</head>
+<body>
+	<h1>Astronomy Picture of the Day Viewer</h1>
+
+    <div>
+      <label for="date-input">Enter a date:</label>
+      <input type="date" id="date-input" />
+      <button id="submit-btn">Submit</button>
+      <button id="current-date-btn">Get Current Date</button>
+    </div>
+
+    <div id="apod-container"></div>
+
+	<h1>Mars Weather</h1>
+    <table id="weather-table">
+      <thead>
+        <tr>
+          <th>Sol</th>
+          <th>Average Temperature (°F)</th>
+          <th>High Temperature (°F)</th>
+          <th>Low Temperature (°F)</th>
+          <th>Average Wind Speed (mph)</th>
+          <th>Average Pressure (Pa)</th>
+          <th>Season</th>
+        </tr>
+      </thead>
+    </table>
+
+    <h1>Current ISS Location</h1>
+    <p id="location"></p>
+
+    <div id="map" class="map"></div>
+
+</body>
+<script src="script.js"></script>
+</html>
